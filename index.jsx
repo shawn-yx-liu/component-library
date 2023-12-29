@@ -5,7 +5,18 @@ import Star from "./components/Star"
 
 function App() {
   return (
-    <h1>Your components go here</h1>
+    <div>
+      <Star />
+      <br/>
+      <Menu>
+        <Menu.Button>Sports</Menu.Button>
+        <Menu.Dropdown>
+          <Menu.Item>Tennis</Menu.Item>
+          <Menu.Item>Baseball</Menu.Item>
+          <Menu.Item>Volleyball</Menu.Item>
+        </Menu.Dropdown>
+      </Menu>
+    </div>
   )
 }
 

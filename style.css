@@ -17,7 +17,7 @@ body {
     cursor: pointer;
     transition: color .5s ease-in-out;
     user-select: none;
-    color: white;
+    color: black;
 }
 
 .star.filled {

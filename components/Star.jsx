@@ -3,7 +3,7 @@ import { BsStar, BsStarFill } from "react-icons/bs"
 import useToggle from "../hooks/useToggle"
 
 export default function Star({ onChange }) {
-    const [on, toggle] = useToggle()
+    const [on, toggle] = useToggle({initialValue: false, onToggle: onChange})
     return (
         <>
             {
