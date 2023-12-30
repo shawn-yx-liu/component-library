@@ -36,6 +36,7 @@ body {
 .page-subheading {
     margin-top: 0;
     font-size: 20px;
+    text-align: center;
 }
 
 .page-label-row, .page-label-col {
@@ -312,4 +313,88 @@ button.button-danger {
     right: auto;
     padding: 12px;
     border-radius: 6px;
+}
+
+/* Testimonial styling */
+.testimonial-with-image, .testimonial-no-image {
+    display: flex;
+    max-width: 1200px;
+    margin-top: 3em;
+    margin-right: 3em;
+}
+
+.testimonial-text {
+    font-size: 1.25rem;
+}
+
+.testimonial-name, .testimonial-occupation {
+    margin: 0;
+    line-height: 1.5em;
+    font-size: 1rem;
+}
+
+.testimonial-name {
+    font-weight: 700;
+    margin-top: 1.5em;
+}
+
+.testimonial-with-image {
+    position: relative;
+    background-color: #2545B8;
+    color: white;
+    padding: 3em 2em 3em 25em;
+}
+
+.testimonial-image {
+    position: absolute;
+    top: -2em;
+    left: 2em;
+    max-height: 130%;
+}
+
+.testimonial-with-image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.testimonial-no-image {
+    flex-direction: column;
+    align-items: center;
+    background: #F9FAFB;
+    margin-bottom: 3em;
+    padding: 3em 10em 2em 10em;
+}
+
+.testimonial-logo {
+    margin-bottom: 2em;
+}
+
+@media (max-width: 1050px) {
+    .testimonial-with-image {
+        width: 400px;
+        margin-top: 6em;
+        padding: 9em 1em 4em 1em;
+        flex-direction: column;
+    }
+
+    .testimonial-image {
+        width: 350px;
+        height: 200px;
+        object-fit: cover;
+        object-position: 50% 20%;
+        top: -5em;
+        left: 25px;
+    }
+
+    .testimonial-no-image {
+        width: 400px;
+        align-items: start;
+        padding: 5em 1em;
+    }
+
+    .testimonial-logo {
+        align-self: center;
+    }
 }

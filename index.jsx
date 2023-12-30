@@ -20,6 +20,9 @@ function App() {
     case "cards":
       displayedPage = <Pages.Cards />;
       break;
+    case "testimonials":
+      displayedPage = <Pages.Testimonials />;
+      break;
     default:
       displayedPage = <Pages.Home/>;
       break;
@@ -33,6 +36,7 @@ function App() {
           <Menu.Item onClick={() => setPage("badges")}>Badges</Menu.Item>
           <Menu.Item onClick={() => setPage("banners")}>Banners</Menu.Item>
           <Menu.Item onClick={() => setPage("cards")}>Cards</Menu.Item>
+          <Menu.Item onClick={() => setPage("testimonials")}>Testimonials</Menu.Item>
         </Menu.Dropdown>
       </Menu>
       {displayedPage}
