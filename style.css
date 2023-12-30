@@ -3,9 +3,8 @@
 }
 
 body {
-    height: 100vh;
     margin: 0;
-    padding: 10px;
+    padding: 0;
     display: flex;
     justify-content: center;
     font-family: Inter, sans-serif;
@@ -16,7 +15,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw;
+    margin-top: 3em;
     margin-left: 3em;
     gap: 5em;
 }
@@ -39,28 +38,16 @@ body {
     font-size: 20px;
 }
 
-.page-label {
-    width: 4em;
+.page-label-row, .page-label-col {
     font-family: Permanent Marker;
     font-size: 40px;
     color: #5E5D5D;
-    text-align: end;
+    text-align: center;
     margin: 0 1em 0 0;
 }
 
-/* Star styling */
-
-.star {
-    height: 30px;
-    width: 30px;
-    cursor: pointer;
-    transition: color .5s ease-in-out;
-    user-select: none;
-    color: black;
-}
-
-.star.filled {
-    color: orange;
+.page-label-row {
+    text-align: end;
 }
 
 /* Button styling */
@@ -113,7 +100,9 @@ button.button-danger {
 /* Menu Styling */
 
 .menu {
-    position: relative;
+    position: fixed;
+    left: 2em;
+    top: 1em;
     display: inline-block;
     align-self: flex-start;
 }
@@ -165,6 +154,11 @@ button.button-danger {
 }
 
 /* Badge styling */
+
+.badge-grid {
+    display: grid;
+    grid-template: 1fr 1fr / 0.25fr 1fr;
+}
 
 .badge-row {
     display: inline-flex;
@@ -224,4 +218,69 @@ button.button-danger {
 .badge-pink {
     color: #9D174D;
     background: #FCE7F3;
+}
+
+/* Banner styling */
+.banner-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    margin-right: 1em;
+    gap: 1em;
+}
+
+.banner {
+    display: flex;
+    flex-basis: 200px;
+    flex-grow: 0;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.banner-title {
+    margin-top: 2px;
+    font-weight: 600;
+}
+
+.banner-text {
+    margin-bottom: 0;
+}
+
+.banner-success {
+    color: #047857;
+    background: #ECFDF5;
+}
+
+.banner-success .banner-title {
+    color: #065F46;
+}
+
+.banner-warning {
+    color: #B45309;
+    background: #FFFBEB;
+}
+
+.banner-warning .banner-title {
+    color: #92400E;
+}
+
+.banner-error {
+    color: #B45309;
+    background: #FEF2F2;
+}
+
+.banner-error .banner-title {
+    color: #92400E;
+}
+
+.banner-neutral {
+    color: #1C51B9;
+    background: #EFF6FF;
+}
+
+.banner-neutral .banner-title {
+    color: #1E40AF;
 }

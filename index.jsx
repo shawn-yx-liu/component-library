@@ -14,6 +14,12 @@ function App() {
     case "badges":
       displayedPage = <Pages.Badges/>;
       break;
+    case "banners":
+      displayedPage = <Pages.Banners/>;
+      break;
+    default:
+      displayedPage = <Pages.Home/>;
+      break;
   }
   return (
     <div className="components">
@@ -22,7 +28,7 @@ function App() {
         <Menu.Dropdown>
           <Menu.Item onClick={() => setPage("home")}>Home</Menu.Item>
           <Menu.Item onClick={() => setPage("badges")}>Badges</Menu.Item>
-          <Menu.Item>Banners</Menu.Item>
+          <Menu.Item onClick={() => setPage("banners")}>Banners</Menu.Item>
           <Menu.Item>Cards</Menu.Item>
         </Menu.Dropdown>
       </Menu>
