@@ -105,6 +105,7 @@ button.button-danger {
     top: 1em;
     display: inline-block;
     align-self: flex-start;
+    z-index: 2;
 }
 
 .menu-button {
