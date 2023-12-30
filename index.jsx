@@ -17,6 +17,9 @@ function App() {
     case "banners":
       displayedPage = <Pages.Banners/>;
       break;
+    case "cards":
+      displayedPage = <Pages.Cards />;
+      break;
     default:
       displayedPage = <Pages.Home/>;
       break;
@@ -29,7 +32,7 @@ function App() {
           <Menu.Item onClick={() => setPage("home")}>Home</Menu.Item>
           <Menu.Item onClick={() => setPage("badges")}>Badges</Menu.Item>
           <Menu.Item onClick={() => setPage("banners")}>Banners</Menu.Item>
-          <Menu.Item>Cards</Menu.Item>
+          <Menu.Item onClick={() => setPage("cards")}>Cards</Menu.Item>
         </Menu.Dropdown>
       </Menu>
       {displayedPage}

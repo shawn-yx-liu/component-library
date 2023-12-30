@@ -284,3 +284,31 @@ button.button-danger {
 .banner-neutral .banner-title {
     color: #1E40AF;
 }
+
+/* Card styling */
+.card-grid {
+    display: grid;
+    grid-template: 250px 250px / 400px 400px;
+    gap: 3em;
+    margin-right: 2em;
+    margin-top: 2em;
+}
+
+.card {
+    position: relative;
+    border-radius: 8px;
+    background: #F9FAFB;
+    padding: 56px 24px 32px 24px;
+    text-align: center;
+}
+
+.card-icon {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: -10%;
+    left: 45%;
+    right: auto;
+    padding: 12px;
+    border-radius: 6px;
+}

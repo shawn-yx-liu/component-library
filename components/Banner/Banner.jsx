@@ -4,16 +4,16 @@ export default function Banner({title, type, children}) {
     let imageSrc;
     switch(type){
         case "success":
-            imageSrc = "../../images/check-circle.png"
+            imageSrc = "../../images/check-circle.svg"
             break;
         case "warning":
-            imageSrc = "../../images/exclamation.png"
+            imageSrc = "../../images/exclamation.svg"
             break;
         case "error":
-            imageSrc = "../../images/x-circle.png"
+            imageSrc = "../../images/x-circle.svg"
             break;
         case "neutral":
-            imageSrc = "../../images/info-circle.png"
+            imageSrc = "../../images/icon.svg"
             break;
     }
 
