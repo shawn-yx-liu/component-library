@@ -250,42 +250,6 @@ button.button-danger {
     margin-bottom: 0;
 }
 
-.banner-success {
-    color: #047857;
-    background: #ECFDF5;
-}
-
-.banner-success .banner-title {
-    color: #065F46;
-}
-
-.banner-warning {
-    color: #B45309;
-    background: #FFFBEB;
-}
-
-.banner-warning .banner-title {
-    color: #92400E;
-}
-
-.banner-error {
-    color: #B45309;
-    background: #FEF2F2;
-}
-
-.banner-error .banner-title {
-    color: #92400E;
-}
-
-.banner-neutral {
-    color: #1C51B9;
-    background: #EFF6FF;
-}
-
-.banner-neutral .banner-title {
-    color: #1E40AF;
-}
-
 /* Card styling */
 .card-grid {
     display: grid;
