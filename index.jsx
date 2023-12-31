@@ -26,6 +26,9 @@ function App() {
     case "tooltips":
       displayedPage = <Pages.Tooltips />;
       break;
+    case "toasts":
+      displayedPage = <Pages.Toasts />;
+      break;
     default:
       displayedPage = <Pages.Home/>;
       break;
@@ -41,6 +44,7 @@ function App() {
           <Menu.Item onClick={() => setPage("cards")}>Cards</Menu.Item>
           <Menu.Item onClick={() => setPage("testimonials")}>Testimonials</Menu.Item>
           <Menu.Item onClick={() => setPage("tooltips")}>Tooltips</Menu.Item>
+          <Menu.Item onClick={() => setPage("toasts")}>Toasts</Menu.Item>
         </Menu.Dropdown>
       </Menu>
       {displayedPage}

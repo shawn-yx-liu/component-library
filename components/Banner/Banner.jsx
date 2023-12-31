@@ -1,8 +1,8 @@
 import React from 'react'
 
-export default function Banner({title, type, children}) {
+export default function Banner({title, variant, children}) {
     let imageSrc;
-    switch(type){
+    switch(variant){
         case "success":
             imageSrc = "../../images/check-circle.svg"
             break;
@@ -18,7 +18,7 @@ export default function Banner({title, type, children}) {
     }
 
     return (
-        <div className={`banner banner-${type}`}>
+        <div className={`banner banner-${variant}`}>
             <img src={imageSrc} className="banner-icon"/>
             <div className="banner-text-wrapper">
                 <p className="banner-title">{title}</p>

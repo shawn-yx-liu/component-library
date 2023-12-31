@@ -4,7 +4,7 @@ export default function Tooltip({icon, variant, color, title, children}) {
     const [visible, setVisible] = React.useState(true);
 
     function closeTooltip() {
-        setVisible(prevVisible => !prevVisible);
+        setVisible(false);
     }
 
     const hiddenClass = visible ? "" : "tooltip-hidden"
@@ -42,9 +42,9 @@ export default function Tooltip({icon, variant, color, title, children}) {
                 <h1 className="tooltip-title" style={{color: titleColor}}>{title}</h1>
                 <button onClick={closeTooltip} className="tooltip-close-btn" style={{color: titleColor}}>X</button>
             </div>
-            <div className="tooltip-text" style={{color: textColor}}>
+            <p className="tooltip-text" style={{color: textColor}}>
                 {children}
-            </div>
+            </p>
         </div>
     )
 }
