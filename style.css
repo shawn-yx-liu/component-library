@@ -195,6 +195,7 @@ button.button-danger {
 
 .banner-title {
     margin-top: 2px;
+    margin-bottom: 0;
     font-weight: 600;
 }
 
