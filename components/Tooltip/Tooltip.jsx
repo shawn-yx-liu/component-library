@@ -1,13 +1,12 @@
 import React from 'react'
 
-export default function Tooltip({icon, variant, color, title, children}) {
+export default function Tooltip({icon, variant = "light", color = "black", title = "", children}) {
     const [visible, setVisible] = React.useState(true);
+    const hiddenClass = visible ? "" : "tooltip-hidden";
 
     function closeTooltip() {
         setVisible(false);
     }
-
-    const hiddenClass = visible ? "" : "tooltip-hidden"
 
     let backgroundColor, titleColor, textColor;
     switch (color) {
@@ -36,9 +35,7 @@ export default function Tooltip({icon, variant, color, title, children}) {
     return (
         <div className={`tooltip tooltip-${variant} ${hiddenClass}`} style={{backgroundColor: backgroundColor}}>
             <div className="tooltip-header">
-                <div style={{color: titleColor}}>
-                    {icon}
-                </div>
+                {icon && <div style={{color: titleColor}}> {icon} </div>}
                 <h1 className="tooltip-title" style={{color: titleColor}}>{title}</h1>
                 <button onClick={closeTooltip} className="tooltip-close-btn" style={{color: titleColor}}>X</button>
             </div>

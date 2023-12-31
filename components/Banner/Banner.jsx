@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Banner({title, variant, children}) {
+export default function Banner({title = "", variant = "success", children}) {
     let imageSrc, backgroundColor, titleColor, textColor;
     switch(variant){
         case "success":
@@ -37,5 +37,5 @@ export default function Banner({title, variant, children}) {
                 {children && <p className="banner-text" style={{color: textColor}}>{children}</p>}
             </div>
         </div>
-    )
+    );
 }

@@ -1,8 +1,8 @@
 import React from 'react'
 
-export default function Toast({visible, variant, children}) {
-    const variantUpperCase = variant.charAt(0).toUpperCase() + variant.slice(1)
-    const hiddenClass = visible ? "" : "toast-hidden"
+export default function Toast({visible = "false", variant = "success", children}) {
+    const variantUpperCase = variant.charAt(0).toUpperCase() + variant.slice(1);
+    const hiddenClass = visible ? "" : "toast-hidden";
     let imageSrc, backgroundColor, titleColor, textColor;
     switch(variant){
         case "success":
@@ -39,5 +39,5 @@ export default function Toast({visible, variant, children}) {
                 {children && <p className="toast-text" style={{color: textColor}}>{children}</p>}
             </div>
         </div>
-    )
+    );
 }

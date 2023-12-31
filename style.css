@@ -174,54 +174,6 @@ button.button-danger {
     align-self: center;
 }
 
-.badge-square {
-    border-radius: 4px;
-}
-
-.badge-pill {
-    border-radius: 12px;
-}
-
-.badge-gray {
-    color: #1F2937;
-    background: #F3F4F6;
-}
-
-.badge-red {
-    color: #991B1B;
-    background: #FEE2E2;
-}
-
-.badge-yellow {
-    color: #92400E;
-    background: #FEF3C7;
-}
-
-.badge-green {
-    color: #065F46;
-    background: #D1FAE5;
-}
-
-.badge-blue {
-    color: #1E40AF;
-    background: #DBEAFE;
-}
-
-.badge-indigo {
-    color: #3730A3;
-    background: #E0E7FF;
-}
-
-.badge-purple {
-    color: #5B21B6;
-    background: #EDE9FE;
-}
-
-.badge-pink {
-    color: #9D174D;
-    background: #FCE7F3;
-}
-
 /* Banner styling */
 .banner-grid {
     display: grid;
