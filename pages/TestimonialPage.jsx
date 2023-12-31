@@ -1,7 +1,7 @@
 import React from 'react'
 import Testimonial from '../components/Testimonial/Testimonial'
 
-export default function TestimonialsPage() {
+export default function TestimonialPage() {
     return (
         <div className="page">
             <h1 className="page-header">Testimonials</h1>

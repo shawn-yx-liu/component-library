@@ -2,14 +2,16 @@ import HomePage from "./HomePage"
 import BadgePage from "./BadgePage"
 import BannerPage from "./BannerPage"
 import CardPage from "./CardPage"
-import TestimonialsPage from "./TestimonialsPage"
+import TestimonialPage from "./TestimonialPage"
+import TooltipPage from "./TooltipPage"
 
 const Pages = {
     Home: HomePage,
     Badges: BadgePage,
     Banners: BannerPage,
     Cards: CardPage,
-    Testimonials: TestimonialsPage,
+    Testimonials: TestimonialPage,
+    Tooltips: TooltipPage,
 }
 
 export default Pages

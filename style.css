@@ -15,8 +15,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 3em;
-    margin-left: 3em;
+    margin: 3em;
+    max-width: 1200px;
     gap: 5em;
 }
 
@@ -227,7 +227,6 @@ button.button-danger {
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
-    margin-right: 1em;
     gap: 1em;
 }
 
@@ -292,7 +291,6 @@ button.button-danger {
     display: grid;
     grid-template: 250px 250px / 400px 400px;
     gap: 3em;
-    margin-right: 2em;
     margin-top: 2em;
 }
 
@@ -318,9 +316,7 @@ button.button-danger {
 /* Testimonial styling */
 .testimonial-with-image, .testimonial-no-image {
     display: flex;
-    max-width: 1200px;
     margin-top: 3em;
-    margin-right: 3em;
 }
 
 .testimonial-text {
@@ -397,4 +393,45 @@ button.button-danger {
     .testimonial-logo {
         align-self: center;
     }
+}
+
+/* Tooltips styling */
+.tooltips-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5em;
+}
+
+.tooltip {
+    border-radius: 0.5em;
+    padding: 1em;
+    font-size: 0.875rem;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.tooltip-hidden {
+    opacity: 0;
+}
+
+.tooltip-header {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.tooltip-title {
+    flex-grow: 1;
+    font-size: inherit;
+    font-weight: 500;
+}
+
+.tooltip-close-btn {
+    justify-self: flex-end;
+    background-color: inherit;
+    border: none;
+    box-shadow: none;
+}
+
+.tooltip-text {
+    line-height: 1.25em;
 }
